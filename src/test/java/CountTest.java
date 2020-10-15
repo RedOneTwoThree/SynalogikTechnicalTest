@@ -31,7 +31,7 @@ public class CountTest {
     }
 
     @Test
-    public void testRoundAverage() {
+    public void testFormatDecimalThreeDP() {
 
         assertEquals("1.111", Count.formatDecimalThreeDP(1.1111));
         assertEquals("1.112", Count.formatDecimalThreeDP(1.1119));
@@ -67,7 +67,7 @@ public class CountTest {
         assertEquals(" ",Count.getCleansedString(" "));
         assertEquals("&",Count.getCleansedString("!@£$$%£%^%&*%"));
         assertEquals("29/08/1997",Count.getCleansedString("29/08/1997"));
-        
+
     }
 
 
