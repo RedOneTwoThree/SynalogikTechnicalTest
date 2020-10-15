@@ -7,16 +7,18 @@ public class WordStat {
 
     /**
      * Initiating the wordLength and wordFrequency
-     * @param wordLength the length of the word
+     *
+     * @param wordLength    the length of the word
      * @param wordFrequency the number of times the word occurs
      */
-    public WordStat(int wordLength, int wordFrequency){
+    public WordStat(int wordLength, int wordFrequency) {
         this.wordLength = wordLength;
         this.wordFrequency = wordFrequency;
     }
 
     /**
      * toString method that returns the textual form
+     *
      * @return the string
      */
     @Override

@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * This is my solution for the Synalogik's Technical Test.
  * The program takes a text file and returns stats that were highlighted in the requirements.
+ *
  * @author Redwan Khan
  */
 public class Count {
@@ -62,7 +63,8 @@ public class Count {
      * Gets the text file that is in the root folder however you can use a relative path to the file to get it or the directory.
      * Checks are made to make sure that its a file of type txt.
      * If the file doesn't exist or it's not the correct file type you are prompted to type it again.
-     * @param in System input as an InputStream which will allow the scanner to take user input.
+     *
+     * @param in  System input as an InputStream which will allow the scanner to take user input.
      * @param out System out put as a PrintStream so that the user will receive a message with instructions on what to do.
      * @return file that has been requested
      */
@@ -92,6 +94,7 @@ public class Count {
 
     /**
      * Grabs the characters after the period and assuming that this is the extension
+     *
      * @param fileName name of the file with the extension
      * @return extension of the file or null if no extension provided
      */
@@ -105,8 +108,9 @@ public class Count {
 
     /**
      * Calculates the average and also rounds the average to three decimal places using the method roundAverage
+     *
      * @param character number of characters int he text file
-     * @param words number of words in text file
+     * @param words     number of words in text file
      * @return average word length
      */
     public String average(int character, int words) {
@@ -116,6 +120,7 @@ public class Count {
 
     /**
      * Formats the input to three decimal places
+     *
      * @param number the double that needs to be rounded
      * @return the input rounded to three decimal places as a String
      */
@@ -126,10 +131,11 @@ public class Count {
 
     /**
      * Builds the String with all the stats outlined in the specification.
-     * @param wordCount Total number of words
-     * @param average Average word length
-     * @param wordStats List of word length associated with its tally in textual form
-     * @param maxKey List of word lengths with largest frequency
+     *
+     * @param wordCount     Total number of words
+     * @param average       Average word length
+     * @param wordStats     List of word length associated with its tally in textual form
+     * @param maxKey        List of word lengths with largest frequency
      * @param maxValueInMap Largest frequency
      * @return string that has all the required output
      */
@@ -149,6 +155,7 @@ public class Count {
     /**
      * Cleans the word by removing any punctuation however only allowing the ones that were included in the example so that includes "&" and "/".
      * Any further inclusions can be added to the variable WORD_PATTERN
+     *
      * @param value string to be cleansed
      * @return cleansed string
      */
