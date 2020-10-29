@@ -8,11 +8,11 @@ import java.util.*;
  *
  * @author Redwan Khan
  */
-public class Count {
+public class WordCount {
     private static final String WORD_PATTERN = "[^a-zA-Z0-9&/ ]";
 
     public static void main(String[] args) {
-        new Count().run();
+        new WordCount().run();
     }
 
     public void run() {
